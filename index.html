@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<base target="_top">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Map Puzzle</title>
+    
+    <meta name="author" content="Jacek Krzywniak">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin=""/>
+    <script src='http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-image/v0.0.4/leaflet-image.js'></script>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+    <script src="script.js"></script>
+    <script src="http://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script src="http://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body onload="loadMap()">
+    <div class="text" id="coord"></div>
+    <div id="leftPanel">
+        <div id="map" class="puz"></div>
+    </div>
+    
+    <div id="rightPanel">
+        <div id="game" class="puz"></div>
+    </div>
+    
+    <div id="buttonDiv">
+        <button class="btn" id="button1" onclick="getLocation()">LOKALIZACJA</button>
+    </div>
+    
+    
+
+</body>
+</html>
